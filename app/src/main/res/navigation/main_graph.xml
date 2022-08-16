@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.naruiz.gerenciacorretora.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_cotacaoFragment"
+            app:destination="@id/cotacaoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_sinistroFragment"
+            app:destination="@id/sinistroFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_vistoriaFragment"
+            app:destination="@id/vistoriaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cotacaoFragment"
+        android:name="com.naruiz.gerenciacorretora.ui.CotacaoFragment"
+        android:label="fragment_cotacao"
+        tools:layout="@layout/fragment_cotacao" >
+        <action
+            android:id="@+id/action_cotacaoFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sinistroFragment"
+        android:name="com.naruiz.gerenciacorretora.ui.SinistroFragment"
+        android:label="fragment_sinistro"
+        tools:layout="@layout/fragment_sinistro" >
+        <action
+            android:id="@+id/action_sinistroFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vistoriaFragment"
+        android:name="com.naruiz.gerenciacorretora.ui.VistoriaFragment"
+        android:label="fragment_vistoria"
+        tools:layout="@layout/fragment_vistoria" >
+        <action
+            android:id="@+id/action_vistoriaFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.naruiz.gerenciacorretora.ui.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" >
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+</navigation>

@@ -1,0 +1,3 @@
+
+rootProject.name = "GerenciaCorretora"
+include ':app'
