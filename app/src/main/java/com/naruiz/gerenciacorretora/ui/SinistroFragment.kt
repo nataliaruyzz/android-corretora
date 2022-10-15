@@ -29,5 +29,4 @@ class SinistroFragment : Fragment() {
             findNavController().navigate(SinistroFragmentDirections.actionSinistroFragmentToSuccessFragment("sinistro"))
         }
     }
-
 }
