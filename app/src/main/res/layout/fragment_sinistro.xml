@@ -87,4 +87,12 @@
         android:layout_margin="16dp"
         android:text="@string/text_continue"/>
 
+    <Button
+        android:id="@+id/buttonAtualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/text_atualizar"/>
+
+
 </LinearLayout>

@@ -6,4 +6,5 @@
     <string name="text_sinistro">Aviso de Sinistro</string>
     <string name="text_vistoria">Agendamento de Vistoria</string>
     <string name="text_continue">Confirmar</string>
+    <string name="text_atualizar">Atualizar</string>
 </resources>
