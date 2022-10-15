@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.corretor.RelatorioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="Qual o tipo de relatório?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <RadioButton
+            android:id="@+id/oneday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Um dia" />
+
+        <RadioButton
+            android:id="@+id/oneweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uma semana" />
+
+        <RadioButton
+            android:id="@+id/onemonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uma mês" />
+
+        <RadioButton
+            android:id="@+id/treemonths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Três meses" />
+
+        <RadioButton
+            android:id="@+id/sixmonths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seis meses" />
+
+        <RadioButton
+            android:id="@+id/oneyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Um ano" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enviar relatórios"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
